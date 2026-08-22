@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Data + model artifacts (large; regenerate via ingest pipeline)
+data/raw/
+data/processed/*.parquet
+data/processed/*.jsonl
+*.faiss
+*.index
+
+# Env / secrets
+.env
+
+# OS
+.DS_Store

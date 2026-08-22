@@ -1,0 +1,10 @@
+# Serve-only deps for the Anima API (lightweight — no torch/CLIP).
+# The 24 mood-query vectors are precomputed into the index (mood_vectors.npz),
+# so the running server only searches FAISS + reranks in NumPy. This is what
+# lets it fit a free 512MB host.
+fastapi>=0.110
+uvicorn[standard]>=0.29
+requests>=2.31
+pydantic>=2.6
+numpy>=1.26,<2.1
+faiss-cpu>=1.8

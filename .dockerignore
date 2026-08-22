@@ -1,0 +1,23 @@
+# Keep the Space image lean — only ship what the API serves.
+.venv/
+venv/
+**/__pycache__/
+*.pyc
+*.pyo
+
+# Frontend (deploys to Hostinger, not here)
+apps/web/
+
+# Notebooks / dev scratch
+colab_build.ipynb
+*.ipynb_checkpoints
+
+# Raw parquet / intermediate data (the API only needs the built index + images)
+data/processed/*.parquet
+data/processed/*.jsonl
+data/raw/*.parquet
+
+# VCS / OS
+.git/
+.gitignore
+.DS_Store

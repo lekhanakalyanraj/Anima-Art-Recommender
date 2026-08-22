@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/api.ts","./src/main.tsx","./src/types.ts","./src/vite-env.d.ts","./src/components/ambient.tsx","./src/components/gallerywalk.tsx","./src/components/moodselect.tsx","./src/components/plutchikwheel.tsx","./src/components/shinytext.tsx"],"version":"5.9.3"}
