@@ -17,6 +17,7 @@ Therapeutic intent (spec: "soothe, uplift or inspire"): a distress selection
 from __future__ import annotations
 
 import json
+import os
 import statistics as st
 from pathlib import Path
 
@@ -70,6 +71,13 @@ class MoodArtRetriever:
         self.embs = np.load(emb_path) if emb_path.exists() else None  # for MMR
         self._region_stats = self._compute_region_stats()
         self._encoder = None  # lazy
+
+        # Sources to hide from results (comma-separated env). Used when a host's
+        # images become unreachable — e.g. AIC put its IIIF server behind a
+        # Cloudflare bot-challenge, so its images 403 and must be excluded.
+        self.drop_sources = {
+            s.strip() for s in os.environ.get("ART_EXCLUDE_SOURCES", "").split(",") if s.strip()
+        }
 
         # Precomputed mood-query vectors (see precompute_moods.py). When present,
         # by_mood() uses them instead of embedding prompts live, so the server
@@ -151,6 +159,8 @@ class MoodArtRetriever:
             if i == -1:
                 continue
             a = self.meta[i]
+            if a.get("source") in self.drop_sources:
+                continue
             if exclude and a.get("uid") in exclude:
                 continue
             if region and a.get("region") != region:

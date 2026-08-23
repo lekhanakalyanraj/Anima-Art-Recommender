@@ -13,7 +13,8 @@ WORKDIR /app
 ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
     ART_INDEX_DIR=data/processed/index_world \
-    ART_MEDIA_DIR=data/raw/images
+    ART_MEDIA_DIR=data/raw/images \
+    ART_EXCLUDE_SOURCES=aic
 
 COPY requirements-serve.txt .
 RUN pip install --no-cache-dir --upgrade pip \
