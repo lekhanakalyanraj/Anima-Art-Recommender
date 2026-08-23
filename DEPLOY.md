@@ -46,7 +46,7 @@ git push -u origin main
 1. Go to https://render.com → sign up (GitHub login is easiest) → **New → Web Service**.
 2. Connect the `anima` repo.
 3. Render auto-detects the **Dockerfile** and uses it. Settings:
-   - **Name:** `anima-api` (this becomes `https://anima-api.onrender.com` — must
+   - **Name:** `anima-art-recommender` (this becomes `https://anima-art-recommender.onrender.com` — must
      match the frontend's `VITE_API_BASE`, see step 2a).
    - **Instance type:** **Free**.
    - No env vars needed in Render's dashboard — CORS already allows your domain,
@@ -54,7 +54,7 @@ git push -u origin main
      Dockerfile (AIC's images sit behind a Cloudflare bot-challenge and can't be
      served; remove that line if their access is ever restored).
 4. **Create Web Service.** First build takes ~3–5 min.
-5. When live, check `https://anima-api.onrender.com/api/v1/health` →
+5. When live, check `https://anima-art-recommender.onrender.com/api/v1/health` →
    `{"status":"ok", ..., "artworks":1647}`.
 
 > **Free-tier note:** the service spins down after ~15 min idle; the next request
@@ -66,7 +66,7 @@ git push -u origin main
 
 ### 2a. Confirm the API URL
 The build reads `apps/web/.env.production`, currently
-`VITE_API_BASE=https://anima-api.onrender.com`. **Only if your Render service name
+`VITE_API_BASE=https://anima-art-recommender.onrender.com`. **Only if your Render service name
 differs**, edit that file to the real URL.
 
 ### 2b. Build
@@ -96,7 +96,7 @@ npm run build      # outputs apps/web/dist/
 Render's free tier gives ~750 instance-hours/month — enough to stay up 24/7. A
 free pinger avoids the cold-start:
 - Sign up at https://cron-job.org (free), add a job hitting
-  `https://anima-api.onrender.com/api/v1/health` every **10 minutes**.
+  `https://anima-art-recommender.onrender.com/api/v1/health` every **10 minutes**.
 
 ---
 
