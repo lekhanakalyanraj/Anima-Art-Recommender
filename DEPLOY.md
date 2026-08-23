@@ -49,8 +49,10 @@ git push -u origin main
    - **Name:** `anima-api` (this becomes `https://anima-api.onrender.com` — must
      match the frontend's `VITE_API_BASE`, see step 2a).
    - **Instance type:** **Free**.
-   - No env vars needed (CORS already allows your domain; `ART_*` paths default
-     correctly).
+   - No env vars needed in Render's dashboard — CORS already allows your domain,
+     paths default correctly, and `ART_EXCLUDE_SOURCES=aic` is set in the
+     Dockerfile (AIC's images sit behind a Cloudflare bot-challenge and can't be
+     served; remove that line if their access is ever restored).
 4. **Create Web Service.** First build takes ~3–5 min.
 5. When live, check `https://anima-api.onrender.com/api/v1/health` →
    `{"status":"ok", ..., "artworks":1647}`.
