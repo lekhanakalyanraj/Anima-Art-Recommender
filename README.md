@@ -126,13 +126,6 @@ data/processed/         the built index (FAISS + metadata + embeddings)
 
 ---
 
-## 📦 Deployment
-
-The frontend is a static build; the backend is a lightweight FastAPI service.
-Full step-by-step in **[DEPLOY.md](DEPLOY.md)**, and a snapshot of project status
-in **[MILESTONE.md](MILESTONE.md)**.
-
----
 
 ## 🙏 Credits
 
