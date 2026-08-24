@@ -15,6 +15,7 @@ data/processed/*.jsonl
 # Frontend build output (rebuilt on deploy; uploaded to Hostinger separately)
 apps/web/dist/
 node_modules/
+apps/web/.vite/
 
 # Env / secrets
 .env
