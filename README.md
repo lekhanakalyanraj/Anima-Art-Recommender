@@ -7,9 +7,9 @@ Institute of Chicago), Indian art, and NASA's cosmos — ranked with CLIP ViT-L/
 + FAISS, region-balanced and aesthetically curated so each room feels like a
 museum, not a search.
 ## System
-<img width="1290" height="744" alt="Screenshot 2026-08-24 at 10 32 07 AM" src="https://github.com/user-attachments/assets/2fe3afda-b468-455b-82d8-eb865eea1b06" />
-<img width="598" height="669" alt="Screenshot 2026-08-24 at 10 32 26 AM" src="https://github.com/user-attachments/assets/9355a8d2-1528-4515-91bb-c491d0f99df9" />
-<img width="1292" height="752" alt="Screenshot 2026-08-24 at 10 32 40 AM" src="https://github.com/user-attachments/assets/79fde2fc-1036-4056-935c-f4a86f371176" />
+<img width="600" height="600" alt="Screenshot 2026-08-24 at 10 32 07 AM" src="https://github.com/user-attachments/assets/2fe3afda-b468-455b-82d8-eb865eea1b06" />
+<img width="600" height="600" alt="Screenshot 2026-08-24 at 10 32 26 AM" src="https://github.com/user-attachments/assets/9355a8d2-1528-4515-91bb-c491d0f99df9" />
+<img width="600" height="600" alt="Screenshot 2026-08-24 at 10 32 40 AM" src="https://github.com/user-attachments/assets/79fde2fc-1036-4056-935c-f4a86f371176" />
 
 ## Architecture
 
