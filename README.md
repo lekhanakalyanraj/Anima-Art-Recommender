@@ -37,8 +37,7 @@ embedding space. Results are then re-ranked for **aesthetic quality** and
 > **Screenshots** — _drop `landing.png` and `gallery.png` into `docs/` and
 > uncomment the block below to show them here._
 >
-> <!-- <p align="center"><img src="docs/landing.png" width="49%"> <img src="docs/gallery.png" width="49%"></p> -->
-
+<p align="center"><img src="docs/landing.png" width="49%"> <img src="docs/gallery.png" width="49%"></p> 
 ---
 
 ## 🧠 How the retrieval works
