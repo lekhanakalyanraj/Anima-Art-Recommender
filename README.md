@@ -34,10 +34,11 @@ embedding space. Results are then re-ranked for **aesthetic quality** and
 - **Contemplative by design.** Fits any screen with no scrolling; keyboard,
   touch-swipe, and screen-reader accessible.
 
-> **Screenshots** — _drop `landing.png` and `gallery.png` into `docs/` and
-> uncomment the block below to show them here._
->
-<p align="center"><img src="docs/landing.png" width="49%"> <img src="docs/gallery.png" width="49%"></p> 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2fe3afda-b468-455b-82d8-eb865eea1b06" width="49%" alt="Anima — mood wheel landing">
+  <img src="https://github.com/user-attachments/assets/79fde2fc-1036-4056-935c-f4a86f371176" width="49%" alt="Anima — gallery walk">
+</p>
+
 ---
 
 ## 🧠 How the retrieval works
